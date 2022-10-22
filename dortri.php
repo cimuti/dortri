@@ -2,9 +2,9 @@
 /*
 Provider Tri
 */
-echo @color("cyan","───────────────────────────────────────────────\n");
+echo @color("yellow","───────────────────────────────────────────────\n");
 echo @color("green","                 TOOLS DOR TRI                 \n");
-echo @color("cyan","───────────────────────────────────────────────\n");
+echo @color("yellow","───────────────────────────────────────────────\n");
 echo @color('purple', "Masukkan Nomor Tri \t\t: ");
 $nomor = trim(fgets(STDIN));
 $login = login($nomor);
@@ -199,7 +199,7 @@ function color($color = "default" , $text = "")
             'blue'      => '1;34',
             'purple'    => '1;35',
             'nevy'      => '1;36',
-            'cyan'     => '1;37',
+            'white'     => '1;0',
         );  
         return "\033[".$arrayColor[$color]."m".$text."\033[0m";
     }
